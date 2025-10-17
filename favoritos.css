@@ -1,0 +1,41 @@
+/*enlaces no visitados */
+a:link {
+    color: green;
+    background-color: lightyellow;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+/* enlaces visitados */
+a:visited {
+    color: purple;
+    background-color: lavender;
+}
+
+/* mouse sobre enlace*/
+a:hover {
+    color: red;
+    background-color: pink;
+}
+
+/* enlace siendo presionado */
+a:active {
+    color: orange;
+    background-color: peachpuff;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
