@@ -1,40 +1,28 @@
-/*alternar colores de filas */
-.lista-tareas li:nth-child(odd) {
-    background-color: #f0f0f0;
-}
-.lista-tareas li:nth-child(even) {
-    background-color: #d0d0d0;
+/* alternar colores de filas */
+.tareas li:nth-child(odd) {
+  background-color: #f0f0f0; /* gris claro */
 }
 
-/* agregar ==> al inicio de cada tarea */
-.lista-tareas li::before {
-    content: "==> ";
-    color: blue;
-    font-weight: bold;
+.tareas li:nth-child(even) {
+  background-color: #dcdcdc; /* gris oscuro */
 }
 
-/* cambiar cursor y fondo al pasar el mouse */
-.lista-tareas li:hover {
-    background-color: #c0c0c0 !important;
-    cursor: pointer;
+/* agregar ==>  */
+.tareas li::before {
+  content: "==> ";
+  color: #333;
+  font-weight: bold;
 }
 
-/* Mostrar V al final  */
-.lista-tareas li.hecha::after {
-    content: " ✓";
-    color: green;
-    font-weight: bold;
+/* efecto del mouse */
+.tareas li:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
 }
 
-/* estilos generales*/
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-.lista-tareas li {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+/* cuando una tarea esté marcada como hecha */
+.tareas li.hecha::after {
+  content: " √";
+  color: green;
+  font-weight: bold;
 }
